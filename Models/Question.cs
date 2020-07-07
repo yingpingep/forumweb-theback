@@ -9,8 +9,15 @@ namespace forumweb_theback.Models
         Answer
     }
 
+    public enum AnswerOptionType
+    {
+        Predefined,
+        Textinput
+    }
+
     public class AnswerOption {
         public int Index { get; set; }
+        public AnswerOptionType Type { get; set; }
         public string Text { get; set; }
     }
 
