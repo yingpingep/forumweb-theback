@@ -27,6 +27,7 @@ namespace forumweb_theback.Models
         public string Number { get; set; }
         public string Title { get; set; }
         public QuestionMode Mode { get; set; }
+        public bool HasOtherOption { get; set; }
         public AnswerOption[] AnswerOptions { get; set; }        
     }
 }
