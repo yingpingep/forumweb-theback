@@ -20,5 +20,10 @@ namespace forumweb_theback.Hubs
         {            
             await Clients.All.SendAsync("ReceiveQuestion", question);
         }
+
+        public async Task CloseQuestion(bool shouldClose)
+        {
+            await Clients.All.SendAsync("QuestionClosed", shouldClose);
+        }
     }
 }

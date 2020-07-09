@@ -25,5 +25,6 @@ namespace forumweb_theback.Models
         Task SendMessage(Message message);
         Task SendQuestion(Question question);
         Task SendChangePage(PageType page); 
+        Task CloseQuestion(bool shouldClose);
     }
 }
